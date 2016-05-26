@@ -10,20 +10,20 @@ const getFlights = (success, failure, data) => {
     data: {
     'request': {
       'passengers': {
-        'adultCount': 1,
-        'seniorCount' : 1,
-        'childCount' : 1
+        'adultCount': data.adults,
+        'seniorCount' : data.seniors,
+        'childCount' : data.children
       },
       'slice': [
         {
           'origin': data.origin,
-          'destination': 'LAX',
-          'date': '2016-06-06'
+          'destination': data.destination,
+          'date': data.departure_date
         },
         {
-          'origin': 'LAX',
-          'destination': 'BOS',
-          'date': '2016-06-06'
+          'origin': data.origin,
+          'destination': data.destination,
+          'date': data.return_date
         }
       ]
     }
