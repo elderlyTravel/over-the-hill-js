@@ -1,2 +1,17 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+body {
+  font: 14px/1.6 helvetica, sans-serif;
+  margin: 0 0;
+  padding: 0 0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
