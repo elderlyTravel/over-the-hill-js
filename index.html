@@ -12,10 +12,46 @@
         <h3>Over the Hill and into the Air</h3>
         <h1>Where do you want to go?</h1>
       </header>
+
+      <form role="form" id="signUpForm">
+            <div class="modal-body">
+              <div class="form-group">
+              <label>Flight Origin</label>
+              <input class="form-control" id="flightOrigin" placeholder="Flight Origin" type="text" name="request.slice[].origin">
+            </div>
+            <div class="form-group">
+              <label>Flight Destination</label>
+              <input class="form-control" id="flightDestination" placeholder="Flight Destination" type="text" name="request.slice[].destination">
+            </div>
+            <div class="form-group">
+              <label>Date Of Departure</label>
+              <input class="form-control" id="departureDate" placeholder="Date Visited" type="date" name="request.slice[].date">
+            </div>
+            <div class="form-group">
+              <label>Date Of Return</label>
+              <input class="form-control" id="returnDate" placeholder="Date Visited" type="date" name="request.slice[].date">
+            </div>
+            <div class="form-group">
+              <label>Adults</label>
+              <input class="form-control" id="adults" placeholder="Number of Adults" type="number" name="request.passengers.adultCount">
+            </div>
+            <div class="form-group">
+              <label>Seniors</label>
+              <input class="form-control" id="seniors" placeholder="Number of Seniors" type="number" name="request.passengers.seniorCount">
+            </div>
+            <div class="form-group">
+              <label>Children</label>
+              <input class="form-control" id="children" placeholder="Number of Children" type="number" name="request.passengers.childCount">
+            </div>
+          </div>
+          <button class="btn btn-primary btn-lg" id="flight-submit" type="submit">Submit</button>
+        </form>
     </body>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.4.0/annyang.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
     <script src="assets/scripts/app/annyang.js"></script>
+
+
 
 </html>
