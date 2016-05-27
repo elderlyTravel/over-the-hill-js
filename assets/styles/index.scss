@@ -6,6 +6,7 @@ body {
   margin: 0 0;
   padding: 0 0;
   color: #333;
+  background-color: #c6e1ec;
 }
 
 header {
@@ -28,4 +29,23 @@ header {
 p span {
   color: rgb(36, 208, 115);
   font-weight: bold;
+}
+
+.flight-input-1 {
+  width: 200px;
+  margin-left: 20%;
+}
+
+.flight-input-2 {
+  width: 200px;
+  margin-left: 20%;
+}
+
+.turnt-up {
+  float: right;
+  margin-right: 20%;
+  margin-top: -35%;
+  border: 10px solid;
+  border-color: #a9c9ea;
+  border-radius: 20px;
 }
