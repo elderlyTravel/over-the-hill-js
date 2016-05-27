@@ -13,8 +13,9 @@
         <h1>Where do you want to go?</h1>
       </header>
 
-      <form role="form" id="flight-submit">
-            <div class="modal-body">
+    <div class="container-fluid">
+      <div class="flight-input-1">
+        <form role="form" id="flight-submit">
               <div class="form-group">
               <label>Flight Origin</label>
               <input class="form-control" id="flightOrigin" placeholder="Flight Origin" type="text" name="request.origin">
@@ -31,6 +32,8 @@
               <label>Date Of Return</label>
               <input class="form-control" id="returnDate" placeholder="Date Visited" type="date" name="request.date">
             </div>
+          </div>
+          <div class="flight-input-2">
             <div class="form-group">
               <label>Adults</label>
               <input class="form-control" id="adults" placeholder="Number of Adults" type="number" name="request.passengers.adultCount">
@@ -43,9 +46,11 @@
               <label>Children</label>
               <input class="form-control" id="children" placeholder="Number of Children" type="number" name="request.passengers.childCount">
             </div>
-          </div>
           <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+          </div>
         </form>
+      </div>
+      <img class ="turnt-up" src="http://i.imgur.com/sMuCqGl.jpg?1">
     </body>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.4.0/annyang.min.js"></script>
