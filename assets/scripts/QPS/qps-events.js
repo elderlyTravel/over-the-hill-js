@@ -10,7 +10,7 @@ const flightHandler = () => {
     event.preventDefault();
     let data = getFormFields(this);
     console.log('Flight submitted');
-//    qpsApi.getFlights(qpsUi.success, qpsUi.failure, data);
+    qpsApi.getFlights(qpsUi.success, qpsUi.failure, data);
   });
 };
 
